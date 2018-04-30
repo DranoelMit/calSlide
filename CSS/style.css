@@ -1,0 +1,38 @@
+/* To cover whole page, must set html height AND body height */
+html,body{
+  height: 100%;
+}
+body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#word{
+  font-size: 8rem;
+  font-family: "Muli";
+  vertical-align: middle;
+
+
+}
+#corner{
+  position: absolute;
+  z-index: -1;
+  opacity: 0.75;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background-color: #eeff00;
+  display: none;
+  transition: 1s;
+}
+#signature
+{
+  color: #bbbbbb;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
