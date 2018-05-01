@@ -11,9 +11,10 @@ body{
 }
 
 #word{
-  font-size: 8rem;
+  font-size: 10rem;
   font-family: "Muli";
   vertical-align: middle;
+  animation-duration: .5s;
 
 
 }

@@ -18,26 +18,32 @@ case 0: //heartbeat animation
 //remove then add causes delay on click
   loop =setInterval(function(){
       $word.removeClass(animation);
-      setTimeout(function(){  $word.addClass(animation);}, 500);
-  }, 1500);
+      setTimeout(function(){  $word.addClass(animation);}, 200);
+  }, 600);
   num++; break;
 
 case 1: //highlight a quarter of the background
+  $word.removeClass(animation);
   clearInterval(loop);
-  num++; break;
-  
-case 2:
+  setTimeout(function(){}, 200);
   animation = "fadeIn";
   $corner.addClass(animation);
   $corner.show();
 
   num++; break;
 
-case 3:
+case 2:
+  $corner.css("transition", "1s");
+  $corner.css("height", "100%");
+  $corner.css("width", "33%");
   $corner.removeClass(animation);
+  num++; break;
+
+case 3:
   animation = "fadeOut";
   $corner.addClass(animation);
   num++; break;
+
 }
 
 });
